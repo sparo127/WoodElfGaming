@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7" lang="en-US"  ng-app="micrositeIndexApp"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9" lang="en-US"  ng-app="micrositeIndexApp"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10" lang="en-US"  ng-app="micrositeIndexApp"><![endif]-->
+<!--[if (gte IE 10)|(gt IEMobile 7)]><!--><html lang="en-US"  ng-app="micrositeIndexApp"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"><!--<![endif]-->
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <!--[if IE]><![endif]-->
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAYBV1VTGwIJUlFRDgcB"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,N=y.hash,this[u]=g.now()}function o(){M--,y.hash!==N&&i(0,!0);var t=g.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=g.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,g=t("loader");if(w[v]&&g.xhrWrappable){var b=t(10),x=t(11),E=t(8),O=t(6),P=t(13),R=t(7),T=t(14),L=t(9),j=t("ee"),S=j.get("tracer");t(15),g.features.spa=!0;var N,M=0;j.on(u,r),j.on(p,r),j.on(d,o),j.on(l,o),j.buffer([u,d,"xhr-done","xhr-resolved"]),O.buffer([u]),P.buffer(["setTimeout"+c,"clearTimeout"+s,u]),T.buffer([u,"new-xhr","send-xhr"+s]),R.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),b.buffer([u]),x.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),L.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+s),a(j,"xhr-resolved"),a(j,"xhr-done"),a(R,m+s),a(R,m+"-done"),a(L,"new-jsonp"),a(L,"jsonp-end"),a(L,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(8);var b=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,e){var n=t[0];n instanceof b&&i("bst",[n,e,this.bstStart,g.now()])}),a.on(m,function(t,e,n){this.bstStart=g.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+l,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(24)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(21);e.exports=o;var a=window,s="fetch-",c=s+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,l="prototype";u&&d&&p&&(i(f,function(t,e){r(u[l],e,c),r(d[l],e,c)}),r(a,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(24)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t(24)(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-"),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(24)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(24),a=t("ee").get("promise"),s=i(a),c=t(21),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(24)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(24)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(24)(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,b),b.prototype=l.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(e.cat=c.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(16),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),l=t(19),h=t(18),m=window.XMLHttpRequest;a.features.xhr=!0,t(14),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,l&&(l>34||l<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<d;s++)e.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],21:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],22:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],23:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],24:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[n]];return d&&d.push([b,n,r,a]),a}}function l(t,e){y[t]=m(t).concat(e)}function h(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",g[n]=e,e in u||(u[e]=[])})}var y={},g={},b={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(g,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+x.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1118.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(17),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}]},{},["loader",2,15,5,3,4]);</script>
+<link href="/sites/nbcubravotv/themes/custom/reality/images/icons/apple-touch/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="/sites/nbcubravotv/themes/custom/reality/images/icons/apple-touch/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+<link href="/sites/nbcubravotv/themes/custom/reality/images/icons/apple-touch/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+<link href="/sites/nbcubravotv/themes/custom/reality/images/icons/apple-touch/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
+<link href="/sites/nbcubravotv/themes/custom/reality/images/icons/apple-touch/apple-touch-icon.png" rel="apple-touch-icon" />
+<link rel="shortcut icon" href="http://www.bravotv.com/sites/nbcubravotv/themes/custom/reality/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link href="/sites/nbcubravotv/themes/custom/reality/images/icons/apple-touch/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<script type="application/ld+json" content="parsely metadata">{"@context":"http:\/\/schema.org","@type":"NewsArticle","articleId":"1132451","headline":"10 Insane Facts You Never Knew About Penguins, But Now You\u2019ll Never Forget","url":"http:\/\/www.bravotv.com\/unleashed\/penguin-facts-for-penguin-appreciation-day","thumbnailUrl":"http:\/\/www.bravotv.com\/sites\/nbcubravotv\/files\/field_blog_image\/2018\/01\/unleashed-penguin-facts.jpg","dateCreated":"2018-01-20T14:04:02Z","articleSection":"Blog Post","creator":["Kristyn Pomranz"],"keywords":["Unleashed"]}</script>
+<link rel="amphtml" href="http://www.bravotv.com/unleashed/penguin-facts-for-penguin-appreciation-day?amp" />
+<link href="/sites/nbcubravotv/themes/custom/reality/images/icons/apple-touch/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+<meta name="vertical_name" content="Unleashed" />
+<link href="/sites/nbcubravotv/themes/custom/reality/images/icons/apple-touch/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="/sites/nbcubravotv/themes/custom/reality/images/icons/apple-touch/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link rel="image_src" href="http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2018/01/unleashed-penguin-facts.jpg" />
+<link rel="canonical" href="http://www.bravotv.com/unleashed/penguin-facts-for-penguin-appreciation-day" />
+<meta property="fb:app_id" content="1592250694320227" />
+<meta property="og:site_name" content="Bravo TV Official Site" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="10 Insane Facts You Never Knew About Penguins, But Now You’ll Never Forget" />
+<meta property="og:url" content="http://www.bravotv.com/unleashed/penguin-facts-for-penguin-appreciation-day" />
+<meta property="og:description" content="Quick: Name three things you know about penguins. We’ll wait. *Jeopardy! theme music plays* If all you came up with was, 1. They’re black and white; 2. They waddle; 3. They eat fish, then congrats! You really know basically nothing all about penguins." />
+<meta property="og:image" content="http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2018/01/unleashed-penguin-facts.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@bravotv" />
+<meta name="twitter:url" content="http://www.bravotv.com/unleashed/penguin-facts-for-penguin-appreciation-day" />
+<meta name="twitter:title" content="10 Insane Facts You Never Knew About Penguins, But Now You’ll Never Forget" />
+<meta name="twitter:description" content="Quick: Name three things you know about penguins. We’ll wait. *Jeopardy! theme music plays* If all you came up with was, 1. They’re black and white; 2. They waddle; 3. They eat fish, then congrats! You really know basically nothing all about penguins." />
+<meta name="twitter:image" content="http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2018/01/unleashed-penguin-facts.jpg" />
+<meta property="article:published_time" content="2018-01-20T09:04:02-05:00" />
+<meta property="article:modified_time" content="2018-01-20T09:04:02-05:00" />
+  <title>Penguin Facts: Penguin Awareness Day | Unleashed</title>
+  <link rel="stylesheet" href="/sites/nbcubravotv/files/advagg_css/css__OXONHYJx9wBGs6me-Ck8J89cfj25-m_WK4c-nMrCTnM__FwpMTVdUB9tVhkvz8_hLQblVcLKSbGTl5jq3qAIW1m0__wzgXxzS8yQsfL_QvGI9UJzpoJYkt568RQ1v8v05WSdg.css" media="all" />
+<link rel="stylesheet" href="/sites/nbcubravotv/files/advagg_css/css___S1UVOD0uN5k0DbvI2egsnV6_TX2SpgCXoKjbX7m510__UJ8jPvy0Isd7r4x9pbVjn8NaDW9Oc8zywfBIwH13aVU__wzgXxzS8yQsfL_QvGI9UJzpoJYkt568RQ1v8v05WSdg.css" media="all" />
+<link rel="stylesheet" href="/sites/nbcubravotv/files/advagg_css/css__Fc9t9m2l00gzypWKNeLlIVRJlooL8PyXEYCSfY54nIQ__pdtVHZr9cTgtDx3YN3BLZhEotI5GcVP3xLJiJb-bThQ__wzgXxzS8yQsfL_QvGI9UJzpoJYkt568RQ1v8v05WSdg.css" media="all" />
+  <script type="text/javascript">
+var mpscall = {"site":"bravo-web","path":"\/node\/1132451","title":"10 Insane Facts You Never Knew About Penguins, But Now You’ll Never Forget","content_id":"node1132451","is_content":"1","type":"blog","cag":{"authors":"Kristyn-Pomranz","field-related-posts":"It-s-So-Cold-in-Canada-That-Even-the-Penguins-Are-Staying-Indoors|Naughty-Penguin-of-the-Month-New-Zealand-Aquarium-is-Shaming-Its-Bad-Animals","field-microsite":"Unleashed"},"pubdate":"1516457042","cat":"unleashed|penguin-facts-for-penguin-appreciation-day"}
+var mpsopts = {"host":"mps.nbcuni.com","updatecorrelator":true}
+var mps=mps||{};mps._ext=mps._ext||{};mps._adsheld=[];mps._queue=mps._queue||{};mps._queue.gptloaded=mps._queue.gptloaded||[];mps.__timer=Date.now();mps.__intcode="v2"; "function"!=typeof mps.getAd&&(mps.getAd=function(a){if("string"!=typeof a)return!1;var b="mps-getad-"+a.replace(/\W/g,"");mps._ext&&mps._ext.loaded||(mps._queue.gptloaded.push(function(){"function"==typeof mps._gptfirst&&mps._gptfirst();mps.insertAd("#"+b,a)}),mps._adsheld.push(a));return'<div id="'+b+'" class="mps-wrapper" data-mps-fill-slot="'+a+'"></div>'});(function(){head=document.head||document.getElementsByTagName("head")[0];mpsload=document.createElement("script");mpsload.src="//"+mpsopts.host+"/fetch/ext/load-"+mpscall.site+".js?nowrite=2";mpsload.id="mps-load";head.insertBefore(mpsload,head.firstChild)})();
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1132451 node-type-blog page-blog microsite-popup microsite-popup microsite-popup--unleashed auth2-pages palette__white-navy"  data-microsite="Unleashed">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+  <div id="page">
+    <div class="header__advertisement">
+  <div class="advertisement bravo-ad" data-adregion="topbanner" data-injection-method="1">
+  </div>
+</div>
+
+<header class="header__wrapper">
+
+  <div class="header__container">
+    <div class="verticals-nav">
+      <div class="menu-block-wrapper menu-block-verticals-nav menu-name-menu-verticals parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="first leaf menu-mlid-267804"><a href="/the-daily-dish/news">The Daily Dish</a></li>
+<li class="leaf menu-mlid-267770"><a href="/the-feast">The Feast</a></li>
+<li class="leaf menu-mlid-267768"><a href="/lookbook">The Lookbook</a></li>
+<li class="leaf menu-mlid-267773"><a href="/personal-space">Personal Space</a></li>
+<li class="last leaf menu-mlid-267772"><a href="/home-design">Home &amp; Design</a></li>
+</ul></div>
+    </div>
+
+    <div class="header__background header__background--microsite">
+          </div>
+
+    <a class="primary-nav__toggle primary-nav__toggle--microsite" href="#">
+      <svg class="icon-menu" width="100%" height="100%" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect x="0" y="0" width="20" height="3"></rect><rect x="0" y="8" width="20" height="3"></rect><rect x="0" y="16" width="20" height="3"></rect></svg>
+      <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 15 16"><g transform="translate(-634.000000, -401.9375)"><polygon points="649 403.446289 643.008789 409.4375 649 415.428711 647.491211 416.9375 641.5 410.946289 635.508789 416.9375 634 415.428711 639.991211 409.4375 634 403.446289 635.508789 401.9375 641.5 407.928711 647.491211 401.9375"></polygon></g></svg>
+    </a>
+          <div class="primary-nav ">
+        <div class="primary-nav__wrapper">
+          <div class="microsite-subnav">
+            <ul class="menu">
+                              <li><a href="http://www.bravotv.com/unleashed/videos/behind-the-scenes-with-bravolebs-and-their-pets">Behind-the-Scenes Bravo Pet Videos</a></li>
+                              <li><a href="http://www.bravotv.com/unleashed/franchise/rescue-stories">Rescue Stories</a></li>
+                              <li><a href="http://www.bravotv.com/unleashed/franchise/bravoleb-pets">Bravoleb Pets</a></li>
+                              <li><a href="http://www.bravotv.com/unleashed/franchise/animal-quizzes">Animal Quizzes</a></li>
+                          </ul>
+          </div>
+        </div>
+      </div>
+    
+    <div class="header container">
+      <div class="header__elastic-container">
+        <div class="header__logo-container">
+          <a class="header__logo header__logo--microsite" href="/" title="Home" rel="home">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 276 210"><path d="M132.117558 68.2618752c-8.446175 0-13.560608 6.5177764-13.560608 14.3952664 0 7.8776815 5.114433 14.3954578 13.560608 14.3954578 8.070509 0 13.560417-6.1896753 13.560417-14.3954578 0-8.2057826-5.489908-14.3952664-13.560417-14.3952664zm99.461775 38.0279278c-13.890083 0-24.165333-10.1751551-24.165333-23.6326614 0-13.4575064 10.27525-23.6326615 24.165333-23.6326615 13.888167 0 24.211334 10.1751551 24.211334 23.6326615 0 13.4575063-10.323167 23.6326614-24.211334 23.6326614zm-42.168966-1.1722h-11.63685L159.70855 60.19668h10.698067l13.279241 34.745768 13.278475-34.745768h10.417084l-17.97105 44.920923zm-34.53565 0H145.0679v-5.3923111c-3.143717 3.9856711-7.695033 6.5645111-14.123533 6.5645111-12.57525 0-22.475792-9.8935972-22.475792-23.6326614 0-13.7388727 9.900542-23.6326615 22.475792-23.6326615 6.4285 0 10.979816 2.6257662 14.123533 6.611629V60.19668h9.806817v44.920923zm-48.888609-35.1207953c-2.064633-1.0785388-5.067666-1.6410799-7.4606247-1.6410799-6.2408583 0-10.69845 4.3606987-10.69845 12.050675v24.7112002h-9.8068166V60.19668h9.7130916v5.0642102c3.0030334-4.3139639 7.55435-6.2364101 13.0444497-6.2364101 3.003034 0 5.302075.3750274 7.55435 1.2660526l-2.346 9.706275zM48.8144333 106.289803c-6.4283083 0-10.9328583-2.57884-14.0769583-6.5175848v5.3453848H24.93085V46.8634805l9.806625-9.2678493v27.9466253c3.1441-3.938745 7.64865-6.5177764 14.0769583-6.5177764 12.5748667 0 22.4757917 9.8937888 22.4757917 23.6326615 0 13.7390642-9.900925 23.6326614-22.4757917 23.6326614zM0 0v210l57.555775-54.392758H276V0H0zm47.6412417 68.2620668c-8.0707 0-13.5604167 6.1892922-13.5604167 14.3950748 0 8.2057825 5.4897167 14.3954578 13.5604167 14.3954578 8.4459833 0 13.5606083-6.5177763 13.5606083-14.3954578 0-7.87749-5.114625-14.3950748-13.5606083-14.3950748zm183.9380913-.0001916c-8.025083 0-14.077916 5.9081175-14.077916 14.3952664 0 8.4873403 6.052833 14.3954578 14.077916 14.3954578 8.023167 0 14.122-5.9081175 14.122-14.3954578 0-8.4871489-6.098833-14.3952664-14.122-14.3952664z"/></svg>
+          </a>
+        </div>
+        <div class="header__primary">
+          <!-- Even if this div is empty, having it in the DOM properly aligns
+          the social icons to the right of the header. -->
+                        <div class="microsite__logo-wrapper">
+    <div class="microsite__logo">
+      <a href="/unleashed" title="Unleashed">
+                  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/microsite-logo--computer-1_5x/public/2017/02/verticals-logos-720x280-unleashed.png?itok=Rz4yjDUZ&amp;timestamp=1486472420 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/microsite-logo--computer/public/2017/02/verticals-logos-720x280-unleashed.png?itok=gZs7i5ja&amp;timestamp=1486472420 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/microsite-logo--tablet-1_5x/public/2017/02/verticals-logos-720x280-unleashed.png?itok=tVnxEDJh&amp;timestamp=1486472420 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/microsite-logo--tablet/public/2017/02/verticals-logos-720x280-unleashed.png?itok=Dhoqmbp0&amp;timestamp=1486472420 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/microsite-logo--mobile-1_5x/public/2017/02/verticals-logos-720x280-unleashed.png?itok=xzmy2nke&amp;timestamp=1486472420 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/microsite-logo--mobile/public/2017/02/verticals-logos-720x280-unleashed.png?itok=p7mCxLeC&amp;timestamp=1486472420 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="http://www.bravotv.com/sites/nbcubravotv/files/styles/microsite-logo--mobile-1_5x/public/2017/02/verticals-logos-720x280-unleashed.png?itok=xzmy2nke&amp;timestamp=1486472420" alt="" title="" />
+</picture>              </a>
+    </div>
+  </div>
+                  </div>
+        <div class="header__secondary">
+                    <div class="header__icons">
+            <div class="icon-list last">
+              <span>Get Updates</span>
+                              <a class="b-icon b-icon-facebook" href="https://www.facebook.com/BravoUnleashed"><span class="visuallyhidden">Facebook</span></a>
+                                        </div>
+          </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container vertical-nav__wrapper">
+  <div class="vertical-nav">
+    <div class="vertical-nav__inner-wrapper">
+      <a class="primary-nav__toggle--vertical js-active" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 15 16"><g transform="translate(-634.000000, -401.9375)"><polygon points="649 403.446289 643.008789 409.4375 649 415.428711 647.491211 416.9375 641.5 410.946289 635.508789 416.9375 634 415.428711 639.991211 409.4375 634 403.446289 635.508789 401.9375 641.5 407.928711 647.491211 401.9375"></polygon></g></svg>
+      </a>
+      <div class="vertical-nav__top">
+        <div class="primary-nav--vertical">
+          <h3>Unleashed</h3>
+                      <div>
+              <ul class="menu">
+                                  <li><a href="http://www.bravotv.com/unleashed/videos/behind-the-scenes-with-bravolebs-and-their-pets">Behind-the-Scenes Bravo Pet Videos</a></li>
+                                  <li><a href="http://www.bravotv.com/unleashed/franchise/rescue-stories">Rescue Stories</a></li>
+                                  <li><a href="http://www.bravotv.com/unleashed/franchise/bravoleb-pets">Bravoleb Pets</a></li>
+                                  <li><a href="http://www.bravotv.com/unleashed/franchise/animal-quizzes">Animal Quizzes</a></li>
+                              </ul>
+            </div>
+                  </div>
+                  <div class="icon-list vertical-nav__icons">
+            <h5>Get Updates</h5>
+                          <a class="b-icon b-icon-facebook" href="https://www.facebook.com/BravoUnleashed"><span class="visuallyhidden">Facebook</span></a>
+                                  </div>
+              </div>
+      <div class="vertical-nav__middle">
+        <div class="primary-nav--vertical">
+          <h3>BravoTV.com</h3>
+          <div class="menu-block-wrapper menu-block-primary-nav menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="first expanded menu-mlid-3276 header-nav-item"><a href="/shows" class="header-shows">Shows</a><div class="primary-nav__sub-menu drop-down--primary-nav col-2"><ul class="primary-nav__sub-menu__buttons"><li class="primary-nav__sub-menu__buttons--see-all-shows"><a href="/shows" title="See all shows">See All Shows</a></li></ul><ul class="menu"><li class="first leaf menu-mlid-268221"><a href="/backyard-envy">Backyard Envy</a></li>
+<li class="leaf menu-mlid-268206"><a href="/below-deck">Below Deck</a></li>
+<li class="leaf menu-mlid-268211"><a href="/dirty-john">Dirty John</a></li>
+<li class="leaf menu-mlid-268224"><a href="/dont-be-tardy">Dont Be Tardy</a></li>
+<li class="leaf menu-mlid-268174"><a href="/married-to-medicine">Married to Medicine</a></li>
+<li class="leaf menu-mlid-268225"><a href="/mexican-dynasties">Mexican Dynasties</a></li>
+<li class="leaf menu-mlid-268222"><a href="/million-dollar-listing-los-angeles">Million Dollar Listing Los Angeles</a></li>
+</ul><ul class="menu"><li class="leaf menu-mlid-268214"><a href="/the-real-housewives-of-atlanta">The Real Housewives of Atlanta</a></li>
+<li class="leaf menu-mlid-268223"><a href="/the-real-housewives-of-beverly-hills">The Real Housewives of Beverly Hills</a></li>
+<li class="leaf menu-mlid-268209"><a href="/the-real-housewives-of-new-jersey">The Real Housewives of New Jersey</a></li>
+<li class="leaf menu-mlid-268215"><a href="/top-chef">Top Chef</a></li>
+<li class="leaf menu-mlid-268220"><a href="/vanderpump-rules">Vanderpump Rules</a></li>
+<li class="last leaf menu-mlid-264686"><a href="/watch-what-happens-live">#WWHL</a></li>
+</ul></div></li>
+<li class="leaf menu-mlid-202451"><a href="/full-episodes">Full Episodes</a></li>
+<li class="leaf menu-mlid-266846"><a href="/videos">Videos</a></li>
+<li class="leaf menu-mlid-265056"><a href="/schedule">Schedule</a></li>
+<li class="leaf menu-mlid-265066"><a href="http://www.shopbybravo.com/?ecid=prf-bvo-100000&amp;pa=prf-bvo-100000">Shop</a></li>
+<li class="last leaf menu-mlid-267796"><a href="/last-chance-kitchen">Last Chance Kitchen</a></li>
+</ul></div>
+        </div>
+        <div class="icon-list vertical-nav__icons">
+          <h5>Get Updates</h5>
+          <a href="http://www.facebook.com/BRAVO" title="Facebook">
+  <svg class="social-icon social-icon--facebook" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path class="social-icon--facebook--color" d="M13.2,0c0.2,0,0.4,0.1,0.5,0.2S14,0.6,14,0.8v12.5c0,0.2-0.1,0.4-0.2,0.5c-0.2,0.2-0.3,0.2-0.5,0.2H9.7V8.6h1.8
+    l0.3-2.1H9.7V5.1c0-0.3,0.1-0.6,0.2-0.8c0.1-0.2,0.4-0.3,0.8-0.3l1.1,0V2.2c-0.4-0.1-0.9-0.1-1.6-0.1c-0.8,0-1.5,0.2-2,0.7
+    C7.7,3.3,7.5,4,7.5,4.9v1.6H5.7v2.1h1.8V14H0.8c-0.2,0-0.4-0.1-0.5-0.2C0.1,13.6,0,13.4,0,13.2V0.8c0-0.2,0.1-0.4,0.2-0.5
+    C0.4,0.1,0.6,0,0.8,0L13.2,0z"/>
+  </svg>
+</a>
+<a href="http://twitter.com/bravotv" title="Twitter">
+  <svg class="social-icon social-icon--twitter" width="220px" height="179px" viewBox="0 0 220 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <path class="social-icon--twitter--color" d="M194.083195,28.3327787 C203.381032,22.7687188 210.55574,13.9101498 213.923461,3.36772047 C205.211314,8.56572379 195.547421,12.2995008 185.224626,14.2762063 C177.024958,5.49084859 165.311148,1.42108547e-14 152.279534,1.42108547e-14 C127.387687,1.42108547e-14 107.181364,20.2063228 107.181364,45.0981697 C107.181364,48.6123128 107.547421,52.0532446 108.352745,55.3477537 C70.8685524,53.4442596 37.6306156,35.5074875 15.3011647,8.19966722 C11.4209651,14.8618968 9.22462562,22.6222962 9.22462562,30.8951747 C9.22462562,46.562396 17.2046589,60.3261231 29.2845258,68.452579 C21.890183,68.2329451 14.9351082,66.1830283 8.85856905,62.8153078 L8.85856905,63.4009983 C8.85856905,85.2911814 24.3793677,103.520799 45.0981697,107.693844 C41.2911814,108.718802 37.3377704,109.304493 33.1647255,109.304493 C30.2362729,109.304493 27.4542429,109.011647 24.672213,108.499168 C30.3826955,126.43594 47.0748752,139.467554 66.8419301,139.833611 C51.3943428,151.986689 31.9201331,159.161398 10.7620632,159.161398 C7.1014975,159.161398 3.51414309,158.941764 0,158.575707 C19.9866889,171.387687 43.7071547,178.855241 69.1846922,178.855241 C152.206323,178.855241 197.597338,110.109817 197.597338,50.4425957 C197.597338,48.4658902 197.524126,46.562396 197.450915,44.5856905 C206.309484,38.2163062 213.996672,30.3094842 220,21.2312812 C211.873544,24.8186356 203.234609,27.234609 194.083195,28.3327787 Z" id="Icon-/-Twitter"></path>
+    </g>
+  </svg>
+</a>
+<a href="http://instagram.com/bravotv" title="Instagram">
+  <svg class="social-icon social-icon--instagram" viewBox="0 0 207 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <polygon id="path-1" points="0 206 206.446362 206 206.446362 0 0 0"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Icon-/-Container-/-Instagram" transform="translate(-26.000000, -25.000000)">
+        <g id="Page-1" transform="translate(26.000000, 25.000000)">
+          <g id="Group-3">
+            <mask id="mask-2" fill="white">
+              <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path class="social-icon--instagram--color" d="M187.501399,142.924345 C187.470459,144.804095 187.434361,146.678695 187.382793,148.558445 C186.76398,171.244195 171.613373,186.591195 148.871992,186.925945 C118.421231,187.379145 87.960156,187.373995 57.509395,186.925945 C34.9794416,186.596345 19.5503684,171.429595 19.1636102,149.016795 C18.6427758,118.266145 18.6427758,87.494895 19.168767,56.749395 C19.5452116,34.532295 34.7886409,19.334645 57.0555987,18.963845 C87.8415502,18.448845 118.653286,18.443695 149.444394,18.968995 C171.675254,19.344945 186.707256,34.655895 187.357009,56.795745 C187.413734,58.737295 187.460145,60.683995 187.491086,62.625545 C187.728297,76.226695 187.444675,89.843295 187.449831,103.454745 C187.460145,116.612995 187.712827,129.771245 187.501399,142.924345 M205.942029,54.225895 C205.33353,24.577345 181.756751,1.345695 152.069193,0.274495 C148.443979,0.140595 144.808452,0.073645 141.178082,0.037595 C130.276658,-0.060255 119.370077,0.181795 108.463497,0.181795 C94.9630576,0.181795 81.4574618,-0.086005 67.9570227,0.027295 C63.4603143,0.063345 58.9636058,0.140595 54.4668973,0.284795 C24.7638687,1.232395 1.14067881,24.484645 0.511552159,54.128045 C-0.174299022,86.609095 -0.169142246,119.126195 0.511552159,151.607245 C1.13036525,181.276395 24.7071442,204.863395 54.3792321,205.491695 C86.8978602,206.176645 119.452586,206.161195 151.971214,205.496845 C181.632988,204.894295 205.31806,181.296995 205.936873,151.689645 C206.622724,119.213745 206.61241,86.701795 205.942029,54.225895" id="Fill-1" mask="url(#mask-2)"></path>
+          </g>
+          <path class="social-icon--instagram--color" d="M102.462557,137.278915 C83.5990708,137.129565 68.7269294,121.772265 68.8197513,102.542165 C68.9125733,83.270865 84.145689,68.438865 103.725967,68.557315 C122.924643,68.670615 137.75553,83.971265 137.636924,103.541265 C137.518318,122.591115 122.042834,137.433415 102.462557,137.278915 M103.065899,49.744365 C73.2648921,49.831915 49.9304816,73.264415 49.9872061,103.057165 C50.0387739,132.782965 73.5588283,156.138215 103.370149,156.060965 C133.171156,155.988865 156.546821,132.510015 156.443686,102.753315 C156.34055,72.976015 132.866907,49.661965 103.065899,49.744365" id="Fill-4"></path>
+          <path class="social-icon--instagram--color" d="M158.967927,35.24248 C151.918615,35.13948 146.246161,40.39248 146.019263,47.24198 C145.797522,53.81338 151.567954,59.84403 158.32333,60.10668 C165.042609,60.36418 170.864609,54.74038 171.003842,47.85998 C171.148232,40.60878 166.135846,35.35063 158.967927,35.24248" id="Fill-6"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+</a>
+<a href="https://www.youtube.com/user/VideoByBravo" title="YouTube">
+  <svg class="social-icon social-icon--youtube" viewBox="0 0 70 49.3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path class="social-icon--youtube--color" d="M68.5 7.7c-.8-3-3.2-5.4-6.2-6.2C56.9 0 35 0 35 0S13.1 0 7.7 1.5c-3 .8-5.4 3.2-6.2 6.2C0 13.2 0 24.7 0 24.7s0 11.5 1.5 17c.8 3 3.2 5.4 6.2 6.2 5.5 1.5 27.3 1.5 27.3 1.5s21.9 0 27.3-1.5c3-.8 5.4-3.2 6.2-6.2 1.5-5.5 1.5-17 1.5-17s0-11.5-1.5-17zM27.8 35.1V14.3l18.3 10.4-18.3 10.4z"/>
+  </svg>
+</a>
+<a href="http://www.pinterest.com/bravobybravo" title="Pinterest">
+  <svg class="social-icon social-icon--pinterest" viewBox="0 0 150 193" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g class="social-icon--pinterest--color" id="Icon-/-Container-/-Pinterest" transform="translate(-53.000000, -32.000000)">
+        <g id="Page-1" transform="translate(51.000000, 30.000000)">
+          <path d="M151.03719,55.4903496 C148.529334,37.1674007 139.186985,23.1706385 123.010142,13.5047551 C106.837987,3.84356382 88.2189146,0.263433218 67.1482373,2.77843978 C50.3479464,4.53331376 35.4273756,11.6231923 22.3865248,24.0480755 C9.34567405,36.4776508 2.57680686,51.4738466 2.07523568,69.0460473 C1.07209331,94.3978765 10.1003746,109.211077 29.1600796,113.476266 C31.4148061,109.71314 32.5445132,106.259698 32.5445132,103.125325 C32.5445132,99.9862586 31.9820035,97.5369425 30.8522964,95.7820685 C29.7225893,94.0225024 28.405379,91.8265638 26.9006655,89.1942528 C25.3959519,86.5572497 24.5193743,83.9812448 24.2709325,81.4709305 C22.7615313,72.1851133 23.7646737,63.213672 27.275672,54.5519144 C30.7866703,45.8901567 35.9945729,38.9222747 42.8900048,33.6529606 C49.7854367,28.3789543 57.369943,24.3624513 65.6482113,21.6034516 C73.9217921,18.8397596 82.4485022,18.4643855 91.2283417,20.472637 C100.003494,22.4808885 107.653626,26.7507691 114.174051,33.2775865 C119.691335,39.0489635 123.075768,47.3963453 124.327352,58.3150398 C125.583624,69.2337344 124.89455,79.650366 122.260129,89.5696269 C119.625708,99.4841957 114.863126,107.831578 107.967694,114.60708 C101.067575,121.387275 93.2299389,123.89759 84.4547869,122.138023 C77.9343616,120.885212 73.9217921,117.746146 72.4170785,112.725518 C70.912365,107.704889 71.1608068,101.92882 73.1717791,95.4066944 C75.1780638,88.879877 77.3062257,82.2873691 79.5656398,75.633863 C81.8203663,68.985049 82.696944,62.8336057 82.1953728,57.1842253 C81.6984892,51.5395371 78.8109392,47.7107211 73.5467856,45.7024696 C68.0295026,43.6942181 62.9481646,44.0695922 58.3121468,46.828592 C53.6714415,49.5922839 50.2870079,53.5430964 48.1541585,58.690414 C46.021309,63.8377315 44.9572281,69.6138006 44.9572281,76.0139293 C44.9572281,82.4140579 46.2088123,87.9977478 48.7166682,92.7696913 C47.7135258,97.79032 46.2088123,104.068452 44.2025275,111.594703 C42.2009304,119.130338 40.504026,125.525775 39.1258771,130.799781 C37.7477283,136.069095 36.3695794,142.722601 34.9914306,150.755607 C33.6085941,158.788613 32.9195197,165.817494 32.9195197,171.842248 C32.9195197,177.867003 33.2945262,185.524635 34.0492268,194.810452 C42.3228075,188.785697 48.529165,180.504006 52.6682991,169.960685 C56.8074333,159.417365 60.5059348,145.988356 63.7638037,129.668967 C65.2732048,130.424407 67.274802,131.677218 69.7873455,133.436784 C72.2952014,135.191658 74.2967986,136.51016 75.8015121,137.387597 C77.3062257,138.269726 79.2515719,139.147163 81.6328631,140.0246 C84.0188419,140.902037 86.5876364,141.46979 89.3439341,141.718476 C103.139485,142.975979 115.238132,139.33485 125.644563,130.799781 C136.05568,122.264712 143.391745,111.219329 147.652756,97.6636313 C151.913767,84.1079336 153.043474,70.0501731 151.03719,55.4903496" id="Fill-1"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+</a>
+<a href="/newsletter" title="Newsletter">
+  <svg class="social-icon social-icon--newsletter" enable-background="new 0 0 176 120" viewBox="0 0 176 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <filter id="a" width="176" height="120" x="0" y="0" filterUnits="userSpaceOnUse">
+        <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+      </filter>
+    </defs>
+    <mask id="b" width="176" height="120" x="0" y="0" maskUnits="userSpaceOnUse">
+      <path class="social-icon--newsletter--color" d="M176 120H0V0h176z" filter="url(#a)"/>
+    </mask>
+    <path class="social-icon--newsletter--color" d="M.7 8.6C.3 10 0 11.4 0 12.9v94.3c0 7.1 5.7 12.9 12.9 12.9h150.2c7.1 0 12.9-5.7 12.9-12.9V12.9c0-1.5-.3-2.9-.7-4.2L100 72.3c-7 5.9-17.2 5.9-24.1 0L.7 8.6zM12.9 0c-2.5 0-4.8.7-6.8 1.9l75.3 63.8c4 3.4 9 3.4 13 0l75.5-63.8c-2-1.2-4.3-1.9-6.8-1.9H12.9z" mask="url(#b)"/>
+  </svg>
+</a>
+
+        </div>
+      </div>
+      <div class="vertical-nav__bottom">
+        <div class="verticals-nav--vertical">
+          <h3>Sites</h3>
+          <div class="menu-block-wrapper menu-block-verticals-nav menu-name-menu-verticals parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="first leaf menu-mlid-267804"><a href="/the-daily-dish/news">The Daily Dish</a></li>
+<li class="leaf menu-mlid-267770"><a href="/the-feast">The Feast</a></li>
+<li class="leaf menu-mlid-267768"><a href="/lookbook">The Lookbook</a></li>
+<li class="leaf menu-mlid-267773"><a href="/personal-space">Personal Space</a></li>
+<li class="last leaf menu-mlid-267772"><a href="/home-design">Home &amp; Design</a></li>
+</ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main id="main" class="main" role="main">
+      
+      <div class="container">
+                <a id="main-content"></a>
+
+        
+                
+              </div>
+
+              <div class="container">
+  <article class="blog-post "  data-nid="1132451" data-node-url="/unleashed/penguin-facts-for-penguin-appreciation-day">
+
+    <div class="blog-post__content" id="blog-post__content">
+
+      <header class="blog-post__header">
+        
+        <div class="advertisement blog-post__advertisement--title element-invisible" data-adregion="logoad" data-injection-method="1">
+  </div>
+        <h1 class="headline">10 Insane Facts You Never Knew About Penguins, But Now You’ll Never Forget</h1>
+
+        <div class="blog-post__subtitle">
+          <p>
+  <div class="field-blog-subtitle">
+    <p>It’s Penguin Awareness Day, b*tches!</p>  </div>
+</p>
+        </div>
+
+        
+        <div class="blog-post__meta-wrapper ">
+          <div class="blog-post__meta">
+                          <div class="blog-post__author">
+                                  by <span class="blog-post__author-name">
+  Kristyn Pomranz</span>
+                              </div>
+                        <div class="blog-post__date">
+              January 20, 2018 • 9:04 AM ET            </div>
+          </div>
+
+                  </div>
+
+        
+        <div class="blog-post__share">
+            <a class="icon icon-facebook icon-facebook--dark addthis_button_facebook" href="#" title="Facebook" addthis:url="http://www.bravotv.com/unleashed/penguin-facts-for-penguin-appreciation-day" addthis:title="10 Insane Facts You Never Knew About Penguins, But Now You’ll Never Forget" addthis:media="http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2018/01/unleashed-penguin-facts.jpg">
+    <img src="http://www.bravotv.com/sites/all/modules/custom/common_site/images/transp-bg-60-black.png" alt="" />    Facebook  </a>
+  <a class="icon icon-twitter icon-twitter--dark addthis_button_twitter" href="#" title="Twitter" addthis:url="http://www.bravotv.com/unleashed/penguin-facts-for-penguin-appreciation-day" addthis:title="10 Insane Facts You Never Knew About Penguins, But Now You’ll Never Forget" addthis:media="http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2018/01/unleashed-penguin-facts.jpg">
+    <img src="http://www.bravotv.com/sites/all/modules/custom/common_site/images/transp-bg-60-black.png" alt="" />    Twitter  </a>
+  <a class="icon icon-pinterest icon-pinterest--dark" href="#" title="Pinterest" data-url="http://www.bravotv.com/unleashed/penguin-facts-for-penguin-appreciation-day" data-description="10 Insane Facts You Never Knew About Penguins, But Now You’ll Never Forget" data-media="http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2018/01/unleashed-penguin-facts.jpg">
+    <img src="http://www.bravotv.com/sites/all/modules/custom/common_site/images/transp-bg-60-black.png" alt="" />    Pinterest  </a>
+  <a class="icon icon-email icon-email--dark addthis_button_email" href="#" title="Email" addthis:url="http://www.bravotv.com/unleashed/penguin-facts-for-penguin-appreciation-day" addthis:title="10 Insane Facts You Never Knew About Penguins, But Now You’ll Never Forget" addthis:media="http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2018/01/unleashed-penguin-facts.jpg">
+    <img src="http://www.bravotv.com/sites/all/modules/custom/common_site/images/transp-bg-60-black.png" alt="" />    Email  </a>
+  <a class="icon icon-more icon-more--dark addthis_button_compact" href="#" title="More" addthis:url="http://www.bravotv.com/unleashed/penguin-facts-for-penguin-appreciation-day" addthis:title="10 Insane Facts You Never Knew About Penguins, But Now You’ll Never Forget" addthis:media="http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2018/01/unleashed-penguin-facts.jpg">
+    <img src="http://www.bravotv.com/sites/all/modules/custom/common_site/images/transp-bg-60-black.png" alt="" />    More  </a>
+        </div>
+      </header>
+
+              <div class="blog-post__primary-image">
+          
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/blog-post--computer/public/field_blog_image/2018/01/unleashed-penguin-facts.jpg?itok=eHxq4uc9&amp;timestamp=1516307583 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/blog-post--tablet/public/field_blog_image/2018/01/unleashed-penguin-facts.jpg?itok=wYagjNSL&amp;timestamp=1516307583 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/blog-post--mobile/public/field_blog_image/2018/01/unleashed-penguin-facts.jpg?itok=xcC4ISoZ&amp;timestamp=1516307583 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="http://www.bravotv.com/sites/nbcubravotv/files/styles/blog-post--mobile/public/field_blog_image/2018/01/unleashed-penguin-facts.jpg?itok=xcC4ISoZ&amp;timestamp=1516307583" alt="" title="" />
+</picture>        </div>
+      
+      <div class="blog-post__body ">
+                
+  <div class="field-body">
+    <p>Quick: Name three things you know about penguins. We’ll wait. *<em>Jeopardy!</em> theme music plays* If all you came up with was, 1. They’re black and white; 2. They waddle; 3. They eat fish, then <em>congrats!</em> You really know basically nothing all about penguins.</p>
+
+<p>Luckily, today is officially Penguin Awareness Day and we are here to school your butt with some <em>insane </em>penguin factoids. Hopefully this exercise will not only raise your awareness of penguins, but also boost your appreciation, so that this time next year, you’ll be the one challenging arctic bird n00bs to a bit of pengu-insanity!</p>
+
+<p>1. The smallest penguin is the Little Blue Penguin, who is only 16 inches tall and two pounds!</p>
+
+<div  class="embed-code-other"><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/-wk6RoNq_G/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/-wk6RoNq_G/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Little blue penguin chicks Bronco (left) and Pinto (right) hatched on November 11 &amp; 13th! The Cincinnati Zoo has the largest colony of little blue penguins in the US. Starting this spring you&#39;ll be able to see these little chicks in the Children&#39;s Zoo! #fairypenguin #littlebluepenguin #penguin #penguinlove #penguins #cincinnati #cincinnatizoo #closeenoughtocare #zoobabies</a> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/cincinnatizoo/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Cincinnati Zoo</a> (@cincinnatizoo) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-12-01T18:19:32+00:00">Dec 1, 2015 at 10:19am PST</time></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script></div>
+
+<p>2. Even though they’re black and white, their fur is actually camouflage: When viewed from above, the black on their backs blends into the dark blue of the ocean; when viewed from below, the white on their bellies blends into the bright white of the sky.</p>
+
+<p>3. Male Emperor penguins incubate their eggs for two months without eating. As such, pudgy penguins are considered the best mates.</p>
+
+<div  class="embed-code-other"><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BZtz19sjw9K/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BZtz19sjw9K/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Overseeing his kingdom at @stlzoo 🐧#emporerpenguin</a> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/bbqduchess/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Erin Campbell</a> (@bbqduchess) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-10-01T18:39:56+00:00">Oct 1, 2017 at 11:39am PDT</time></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script></div>
+
+<p>4. Penguins swallow salt water when eating fish, but they expel it from their systems by sneezing.</p>
+
+<p>5. Most species of penguin mate for life!</p>
+
+<div  class="embed-code-other"><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bdko37Dg3j-/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Bdko37Dg3j-/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Who said love was dead? #penguinsinlove #roadtrip #southafrica #travel #houtsbay #seals #capepoint #bouldersbeach #adventureday #futurehome?</a> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/kat.miller91/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Kat</a> (@kat.miller91) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-01-05T15:16:30+00:00">Jan 5, 2018 at 7:16am PST</time></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script></div>
+
+<p>6. Similarly, most species also colonize for life, always returning to their original home.</p>
+
+<p>7. Penguins have no predators on land, therefore they’re not scared of humans.</p>
+
+<p>8. Most penguins can hold their breath for six minutes — although some can hold it for up to twenty minutes!</p>
+
+<div  class="embed-code-other"><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BQ_d_VcDp-e/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BQ_d_VcDp-e/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#penguin #penguinswimming #scarborough #sealifecentre</a> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/smithettinat/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Natalie Smith</a> (@smithettinat) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-02-26T22:32:45+00:00">Feb 26, 2017 at 2:32pm PST</time></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script></div>
+
+<p>9. Penguins pant like dogs when they’re overheated.</p>
+
+<p>10. When penguins slide on their bellies over ice and snow (known as “tobogganing”), it <em>might</em> be for travel, but usually, it’s just for funsies!</p>  </div>
+
+                  <div class="blog-post__vertical_description">
+            <p><em><strong>Unleashed</strong> is Bravo's celebration of pamper-worthy pets and how to spoil them. Want more? Then <a href="https://www.facebook.com/BravoUnleashed/" target="_blank">Like us on Facebook</a> to stay connected to our daily updates.</em></p>          </div>
+              </div>
+
+                        <div class="related-posts"><h2 class="section__title">Related Content</h2>
+            
+  <div class="teaser teaser--related-posts blog">
+      <div class="teaser__image-wrapper">
+      <figure class="teaser__image">
+        
+  <a href="/unleashed/calgary-zoo-brings-penguins-indoors-due-to-cold"><picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--computer-1_5x/public/field_blog_image/2018/01/unleashed-king-penguins-indoor-zoo.jpg?itok=rcJbvkTl&amp;timestamp=1514922903 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--computer/public/field_blog_image/2018/01/unleashed-king-penguins-indoor-zoo.jpg?itok=coU-c1fX&amp;timestamp=1514922903 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--tablet/public/field_blog_image/2018/01/unleashed-king-penguins-indoor-zoo.jpg?itok=A6PejAUh&amp;timestamp=1514922903 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--mobile-1_5x/public/field_blog_image/2018/01/unleashed-king-penguins-indoor-zoo.jpg?itok=BdJHULNh&amp;timestamp=1514922903 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--mobile/public/field_blog_image/2018/01/unleashed-king-penguins-indoor-zoo.jpg?itok=MeuFtZ90&amp;timestamp=1514922903 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--computer/public/field_blog_image/2018/01/unleashed-king-penguins-indoor-zoo.jpg?itok=coU-c1fX&amp;timestamp=1514922903" alt="" title="" />
+</picture></a>      </figure>
+    </div>
+    <div class="teaser__meta-wrapper">
+    <div class="teaser__meta">
+      <div class="headline">
+        <a href="/unleashed/calgary-zoo-brings-penguins-indoors-due-to-cold" title="It’s So Cold in Canada That Even the Penguins Are Staying Indoors">It’s So Cold in Canada That Even the Penguins Are Staying Indoors</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="teaser teaser--related-posts blog">
+      <div class="teaser__image-wrapper">
+      <figure class="teaser__image">
+        
+  <a href="/blogs/naughty-penguin-new-zealand-aquarium"><picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--computer-1_5x/public/field_blog_image/2017/07/unleashed-naughty-nice-penguins.jpg?itok=XSop7AaD&amp;timestamp=1500037429 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--computer/public/field_blog_image/2017/07/unleashed-naughty-nice-penguins.jpg?itok=V0zRCRI6&amp;timestamp=1500037429 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--tablet/public/field_blog_image/2017/07/unleashed-naughty-nice-penguins.jpg?itok=H_DnKt8x&amp;timestamp=1500037429 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--mobile-1_5x/public/field_blog_image/2017/07/unleashed-naughty-nice-penguins.jpg?itok=UuV6-015&amp;timestamp=1500037429 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--mobile/public/field_blog_image/2017/07/unleashed-naughty-nice-penguins.jpg?itok=k2mOTMiX&amp;timestamp=1500037429 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="http://www.bravotv.com/sites/nbcubravotv/files/styles/related-posts--computer/public/field_blog_image/2017/07/unleashed-naughty-nice-penguins.jpg?itok=V0zRCRI6&amp;timestamp=1500037429" alt="" title="" />
+</picture></a>      </figure>
+    </div>
+    <div class="teaser__meta-wrapper">
+    <div class="teaser__meta">
+      <div class="headline">
+        <a href="/blogs/naughty-penguin-new-zealand-aquarium" title="Naughty Penguin of the Month: New Zealand Aquarium is Shaming Its Bad Animals">Naughty Penguin of the Month: New Zealand Aquarium is Shaming Its Bad Animals</a>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+              
+      
+                        <div class="zergnet-widget__header">
+            <h3 class="zergnet-widget__title">You May Also Like...</h3>
+            <span class="zergnet-widget__subtitle">Recommended by Zergnet</span>
+          </div>
+          <div id="zergnet-widget-44853" class="zergnet-widget zergnet-widget-44853"></div>
+              
+      
+    </div> <!-- blog-post__content -->
+
+    <aside class="blog-post__aside">
+
+      <div id="js-blog-post__social-embeds">
+              </div>
+
+                    <div class="microsite-teasers microsite-teasers--blog-post" id="microsite-index" ng-controller="micrositeIndexController">
+  <h2 class="section__title">Unleashed</h2>
+  <div class="microsite-index__content" infinite-scroll="loadMore()" infinite-scroll-distance="1" infinite-scroll-disabled="isBusy || isDone">
+    <div ng-repeat="page in pages" ng-include src="'/microsite/index/' + page + '/1113934'" onload="enableInfiniteScroll()"></div>
+    <div class="microsite-index__view-all">
+      <a class="button" href="/unleashed" title="See All Posts">
+        See All Posts      </a>
+    </div>
+  </div>
+</div>
+          </aside>
+
+  </article>
+</div>
+      
+    </main>
+
+  </div> <!-- /#page -->
+
+  <footer class="site-footer">
+  <div class="site-footer__container container clearfix">
+    <div class="site-footer__triptych">
+      <div class="ways-to-watch__container">
+        <h2 class="site-footer__header">Ways to Watch</h2>
+        <div class="ways-to-watch--cable">
+          <p class="site-footer__triptych-content">Download the Bravo Now app:</p>
+          <div class="app__image">Bravo Now</div>
+          <div class="app__platforms">
+            <ul>
+              <li><a href="https://itunes.apple.com/us/app/bravo-now/id383925190?mt=8oxy">iPhone</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.nbcu.tve.bravo&hl=en">Android</a></li>
+              <li>Apple TV</li>
+              <li><a href="https://channelstore.roku.com/details/86306/bravo-now">Roku</a></li>
+              <li><a href="https://www.amazon.com/NBCUniversal-Media-LLC-Bravo-Now/dp/B01M4R0H1F">Amazon Fire TV</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ways-to-watch--no-cable">
+          <p class="site-footer__triptych-content">Buy episodes:</p>
+          <div class="est__platforms">
+            <ul>
+              <li>
+                <a href="https://www.apple.com/itunes/download/" title="iTunes">
+                  <div class="app-store__itunes">iTunes</div>
+                </a>
+              </li>
+              <li>
+                <a href="https://play.google.com/store/movies/category/TV?hl=en" title="Google Play">
+                  <div class="app-store__google-play">Google Play</div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/b/ref=sv_atv_1?_encoding=UTF8&node=2864549011" title="Amazon">
+                  <div class="app-store__amazon">Amazon</div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.vudu.com/" title="VUDU">
+                  <div class="app-store__vudu">VUDU</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__triptych">
+      <div id="block-menu-menu-about-bravo" class="block block-menu">
+
+    <h2 class="section__title site-footer__header">About Bravo</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/about-us">About Us</a></li>
+<li class="leaf"><a href="/frequently-asked-questions">FAQ</a></li>
+<li class="leaf"><a href="http://www.nbcuni.com/privacy/">Privacy Policy - New</a></li>
+<li class="leaf"><a href="/terms-and-conditions">Terms and Conditions</a></li>
+<li class="leaf"><a href="/closed-captioning">Closed Captioning</a></li>
+<li class="leaf"><a href="/sitemap">HTML Sitemap</a></li>
+<li class="last leaf"><a href="http://www.bravotv.com/mobile">Bravo Apps &amp; Support</a></li>
+</ul>  </div>
+</div>
+    </div>
+    <div class="site-footer__triptych">
+      <div id="block-menu-menu-get-involved" class="block block-menu">
+
+    <h2 class="section__title site-footer__header">Get Involved</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://nbc.researchresults.com/?s=22">Join Viewer&#039;s Voice</a></li>
+<li class="leaf"><a href="/casting">Casting</a></li>
+<li class="leaf"><a href="http://www.nbcunicareers.com/search-results?search_type=criteria&amp;country=1&amp;state=all&amp;city=all&amp;keywords=bravo">Bravo Careers</a></li>
+<li class="last leaf"><a href="/contact">Contact Us</a></li>
+<li><a id="_bapw-link"><img id="_bapw-icon" style="display:inline !important;vertical-align:middle !important"/><span>AdChoices</span></a><script>(function(){var e=document,b,a=(e.location.protocol=="https:"?"https":"http"),c=(a=="https"?"https://info.evidon.com/c/betrad/pub/":"http://cdn.betrad.com/pub/");e.getElementById("_bapw-icon").src=c+"icon1.png";e.getElementById("_bapw-link").onclick=function(){var f=this;function d(i,l){var j=e.getElementsByTagName("head")[0]||e.documentElement,h=false,g=e.createElement("script");function k(){g.onload=g.onreadystatechange=null;j.removeChild(g);l()}g.src=i;g.onreadystatechange=function(){if(!h&&(this.readyState=="loaded"||this.readyState=="complete")){h=true;k()}};g.onload=k;j.insertBefore(g,j.firstChild)}this.onclick="return false";d(c+"pub1.js",function(){BAPW.i(f,{pid:206,ocid:908},false)})};b=new Image();b.src=a+"://l.betrad.com/pub/p.gif?pid=206&ocid=908&ii=1&r="+Math.random()}());</script></li></ul>  </div>
+</div>
+      <div class="stay-connected__container">
+        <h2 class="site-footer__header">Stay Connected with Bravo</h2>
+        <div class="icon-list">
+          <a href="http://www.facebook.com/BRAVO" title="Facebook">
+  <svg class="social-icon social-icon--facebook" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path class="social-icon--facebook--color" d="M13.2,0c0.2,0,0.4,0.1,0.5,0.2S14,0.6,14,0.8v12.5c0,0.2-0.1,0.4-0.2,0.5c-0.2,0.2-0.3,0.2-0.5,0.2H9.7V8.6h1.8
+    l0.3-2.1H9.7V5.1c0-0.3,0.1-0.6,0.2-0.8c0.1-0.2,0.4-0.3,0.8-0.3l1.1,0V2.2c-0.4-0.1-0.9-0.1-1.6-0.1c-0.8,0-1.5,0.2-2,0.7
+    C7.7,3.3,7.5,4,7.5,4.9v1.6H5.7v2.1h1.8V14H0.8c-0.2,0-0.4-0.1-0.5-0.2C0.1,13.6,0,13.4,0,13.2V0.8c0-0.2,0.1-0.4,0.2-0.5
+    C0.4,0.1,0.6,0,0.8,0L13.2,0z"/>
+  </svg>
+</a>
+<a href="http://twitter.com/bravotv" title="Twitter">
+  <svg class="social-icon social-icon--twitter" width="220px" height="179px" viewBox="0 0 220 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <path class="social-icon--twitter--color" d="M194.083195,28.3327787 C203.381032,22.7687188 210.55574,13.9101498 213.923461,3.36772047 C205.211314,8.56572379 195.547421,12.2995008 185.224626,14.2762063 C177.024958,5.49084859 165.311148,1.42108547e-14 152.279534,1.42108547e-14 C127.387687,1.42108547e-14 107.181364,20.2063228 107.181364,45.0981697 C107.181364,48.6123128 107.547421,52.0532446 108.352745,55.3477537 C70.8685524,53.4442596 37.6306156,35.5074875 15.3011647,8.19966722 C11.4209651,14.8618968 9.22462562,22.6222962 9.22462562,30.8951747 C9.22462562,46.562396 17.2046589,60.3261231 29.2845258,68.452579 C21.890183,68.2329451 14.9351082,66.1830283 8.85856905,62.8153078 L8.85856905,63.4009983 C8.85856905,85.2911814 24.3793677,103.520799 45.0981697,107.693844 C41.2911814,108.718802 37.3377704,109.304493 33.1647255,109.304493 C30.2362729,109.304493 27.4542429,109.011647 24.672213,108.499168 C30.3826955,126.43594 47.0748752,139.467554 66.8419301,139.833611 C51.3943428,151.986689 31.9201331,159.161398 10.7620632,159.161398 C7.1014975,159.161398 3.51414309,158.941764 0,158.575707 C19.9866889,171.387687 43.7071547,178.855241 69.1846922,178.855241 C152.206323,178.855241 197.597338,110.109817 197.597338,50.4425957 C197.597338,48.4658902 197.524126,46.562396 197.450915,44.5856905 C206.309484,38.2163062 213.996672,30.3094842 220,21.2312812 C211.873544,24.8186356 203.234609,27.234609 194.083195,28.3327787 Z" id="Icon-/-Twitter"></path>
+    </g>
+  </svg>
+</a>
+<a href="http://instagram.com/bravotv" title="Instagram">
+  <svg class="social-icon social-icon--instagram" viewBox="0 0 207 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <polygon id="path-1" points="0 206 206.446362 206 206.446362 0 0 0"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Icon-/-Container-/-Instagram" transform="translate(-26.000000, -25.000000)">
+        <g id="Page-1" transform="translate(26.000000, 25.000000)">
+          <g id="Group-3">
+            <mask id="mask-2" fill="white">
+              <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path class="social-icon--instagram--color" d="M187.501399,142.924345 C187.470459,144.804095 187.434361,146.678695 187.382793,148.558445 C186.76398,171.244195 171.613373,186.591195 148.871992,186.925945 C118.421231,187.379145 87.960156,187.373995 57.509395,186.925945 C34.9794416,186.596345 19.5503684,171.429595 19.1636102,149.016795 C18.6427758,118.266145 18.6427758,87.494895 19.168767,56.749395 C19.5452116,34.532295 34.7886409,19.334645 57.0555987,18.963845 C87.8415502,18.448845 118.653286,18.443695 149.444394,18.968995 C171.675254,19.344945 186.707256,34.655895 187.357009,56.795745 C187.413734,58.737295 187.460145,60.683995 187.491086,62.625545 C187.728297,76.226695 187.444675,89.843295 187.449831,103.454745 C187.460145,116.612995 187.712827,129.771245 187.501399,142.924345 M205.942029,54.225895 C205.33353,24.577345 181.756751,1.345695 152.069193,0.274495 C148.443979,0.140595 144.808452,0.073645 141.178082,0.037595 C130.276658,-0.060255 119.370077,0.181795 108.463497,0.181795 C94.9630576,0.181795 81.4574618,-0.086005 67.9570227,0.027295 C63.4603143,0.063345 58.9636058,0.140595 54.4668973,0.284795 C24.7638687,1.232395 1.14067881,24.484645 0.511552159,54.128045 C-0.174299022,86.609095 -0.169142246,119.126195 0.511552159,151.607245 C1.13036525,181.276395 24.7071442,204.863395 54.3792321,205.491695 C86.8978602,206.176645 119.452586,206.161195 151.971214,205.496845 C181.632988,204.894295 205.31806,181.296995 205.936873,151.689645 C206.622724,119.213745 206.61241,86.701795 205.942029,54.225895" id="Fill-1" mask="url(#mask-2)"></path>
+          </g>
+          <path class="social-icon--instagram--color" d="M102.462557,137.278915 C83.5990708,137.129565 68.7269294,121.772265 68.8197513,102.542165 C68.9125733,83.270865 84.145689,68.438865 103.725967,68.557315 C122.924643,68.670615 137.75553,83.971265 137.636924,103.541265 C137.518318,122.591115 122.042834,137.433415 102.462557,137.278915 M103.065899,49.744365 C73.2648921,49.831915 49.9304816,73.264415 49.9872061,103.057165 C50.0387739,132.782965 73.5588283,156.138215 103.370149,156.060965 C133.171156,155.988865 156.546821,132.510015 156.443686,102.753315 C156.34055,72.976015 132.866907,49.661965 103.065899,49.744365" id="Fill-4"></path>
+          <path class="social-icon--instagram--color" d="M158.967927,35.24248 C151.918615,35.13948 146.246161,40.39248 146.019263,47.24198 C145.797522,53.81338 151.567954,59.84403 158.32333,60.10668 C165.042609,60.36418 170.864609,54.74038 171.003842,47.85998 C171.148232,40.60878 166.135846,35.35063 158.967927,35.24248" id="Fill-6"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+</a>
+<a href="https://www.youtube.com/user/VideoByBravo" title="YouTube">
+  <svg class="social-icon social-icon--youtube" viewBox="0 0 70 49.3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path class="social-icon--youtube--color" d="M68.5 7.7c-.8-3-3.2-5.4-6.2-6.2C56.9 0 35 0 35 0S13.1 0 7.7 1.5c-3 .8-5.4 3.2-6.2 6.2C0 13.2 0 24.7 0 24.7s0 11.5 1.5 17c.8 3 3.2 5.4 6.2 6.2 5.5 1.5 27.3 1.5 27.3 1.5s21.9 0 27.3-1.5c3-.8 5.4-3.2 6.2-6.2 1.5-5.5 1.5-17 1.5-17s0-11.5-1.5-17zM27.8 35.1V14.3l18.3 10.4-18.3 10.4z"/>
+  </svg>
+</a>
+<a href="http://www.pinterest.com/bravobybravo" title="Pinterest">
+  <svg class="social-icon social-icon--pinterest" viewBox="0 0 150 193" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g class="social-icon--pinterest--color" id="Icon-/-Container-/-Pinterest" transform="translate(-53.000000, -32.000000)">
+        <g id="Page-1" transform="translate(51.000000, 30.000000)">
+          <path d="M151.03719,55.4903496 C148.529334,37.1674007 139.186985,23.1706385 123.010142,13.5047551 C106.837987,3.84356382 88.2189146,0.263433218 67.1482373,2.77843978 C50.3479464,4.53331376 35.4273756,11.6231923 22.3865248,24.0480755 C9.34567405,36.4776508 2.57680686,51.4738466 2.07523568,69.0460473 C1.07209331,94.3978765 10.1003746,109.211077 29.1600796,113.476266 C31.4148061,109.71314 32.5445132,106.259698 32.5445132,103.125325 C32.5445132,99.9862586 31.9820035,97.5369425 30.8522964,95.7820685 C29.7225893,94.0225024 28.405379,91.8265638 26.9006655,89.1942528 C25.3959519,86.5572497 24.5193743,83.9812448 24.2709325,81.4709305 C22.7615313,72.1851133 23.7646737,63.213672 27.275672,54.5519144 C30.7866703,45.8901567 35.9945729,38.9222747 42.8900048,33.6529606 C49.7854367,28.3789543 57.369943,24.3624513 65.6482113,21.6034516 C73.9217921,18.8397596 82.4485022,18.4643855 91.2283417,20.472637 C100.003494,22.4808885 107.653626,26.7507691 114.174051,33.2775865 C119.691335,39.0489635 123.075768,47.3963453 124.327352,58.3150398 C125.583624,69.2337344 124.89455,79.650366 122.260129,89.5696269 C119.625708,99.4841957 114.863126,107.831578 107.967694,114.60708 C101.067575,121.387275 93.2299389,123.89759 84.4547869,122.138023 C77.9343616,120.885212 73.9217921,117.746146 72.4170785,112.725518 C70.912365,107.704889 71.1608068,101.92882 73.1717791,95.4066944 C75.1780638,88.879877 77.3062257,82.2873691 79.5656398,75.633863 C81.8203663,68.985049 82.696944,62.8336057 82.1953728,57.1842253 C81.6984892,51.5395371 78.8109392,47.7107211 73.5467856,45.7024696 C68.0295026,43.6942181 62.9481646,44.0695922 58.3121468,46.828592 C53.6714415,49.5922839 50.2870079,53.5430964 48.1541585,58.690414 C46.021309,63.8377315 44.9572281,69.6138006 44.9572281,76.0139293 C44.9572281,82.4140579 46.2088123,87.9977478 48.7166682,92.7696913 C47.7135258,97.79032 46.2088123,104.068452 44.2025275,111.594703 C42.2009304,119.130338 40.504026,125.525775 39.1258771,130.799781 C37.7477283,136.069095 36.3695794,142.722601 34.9914306,150.755607 C33.6085941,158.788613 32.9195197,165.817494 32.9195197,171.842248 C32.9195197,177.867003 33.2945262,185.524635 34.0492268,194.810452 C42.3228075,188.785697 48.529165,180.504006 52.6682991,169.960685 C56.8074333,159.417365 60.5059348,145.988356 63.7638037,129.668967 C65.2732048,130.424407 67.274802,131.677218 69.7873455,133.436784 C72.2952014,135.191658 74.2967986,136.51016 75.8015121,137.387597 C77.3062257,138.269726 79.2515719,139.147163 81.6328631,140.0246 C84.0188419,140.902037 86.5876364,141.46979 89.3439341,141.718476 C103.139485,142.975979 115.238132,139.33485 125.644563,130.799781 C136.05568,122.264712 143.391745,111.219329 147.652756,97.6636313 C151.913767,84.1079336 153.043474,70.0501731 151.03719,55.4903496" id="Fill-1"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+</a>
+<a href="/newsletter" title="Newsletter">
+  <svg class="social-icon social-icon--newsletter" enable-background="new 0 0 176 120" viewBox="0 0 176 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <filter id="a" width="176" height="120" x="0" y="0" filterUnits="userSpaceOnUse">
+        <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+      </filter>
+    </defs>
+    <mask id="b" width="176" height="120" x="0" y="0" maskUnits="userSpaceOnUse">
+      <path class="social-icon--newsletter--color" d="M176 120H0V0h176z" filter="url(#a)"/>
+    </mask>
+    <path class="social-icon--newsletter--color" d="M.7 8.6C.3 10 0 11.4 0 12.9v94.3c0 7.1 5.7 12.9 12.9 12.9h150.2c7.1 0 12.9-5.7 12.9-12.9V12.9c0-1.5-.3-2.9-.7-4.2L100 72.3c-7 5.9-17.2 5.9-24.1 0L.7 8.6zM12.9 0c-2.5 0-4.8.7-6.8 1.9l75.3 63.8c4 3.4 9 3.4 13 0l75.5-63.8c-2-1.2-4.3-1.9-6.8-1.9H12.9z" mask="url(#b)"/>
+  </svg>
+</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__triptych">
+      <h2 class="site-footer__header">Stay Connected with Bravo</h2>
+      <div class="icon-list">
+        <a href="http://www.facebook.com/BRAVO" title="Facebook">
+  <svg class="social-icon social-icon--facebook" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path class="social-icon--facebook--color" d="M13.2,0c0.2,0,0.4,0.1,0.5,0.2S14,0.6,14,0.8v12.5c0,0.2-0.1,0.4-0.2,0.5c-0.2,0.2-0.3,0.2-0.5,0.2H9.7V8.6h1.8
+    l0.3-2.1H9.7V5.1c0-0.3,0.1-0.6,0.2-0.8c0.1-0.2,0.4-0.3,0.8-0.3l1.1,0V2.2c-0.4-0.1-0.9-0.1-1.6-0.1c-0.8,0-1.5,0.2-2,0.7
+    C7.7,3.3,7.5,4,7.5,4.9v1.6H5.7v2.1h1.8V14H0.8c-0.2,0-0.4-0.1-0.5-0.2C0.1,13.6,0,13.4,0,13.2V0.8c0-0.2,0.1-0.4,0.2-0.5
+    C0.4,0.1,0.6,0,0.8,0L13.2,0z"/>
+  </svg>
+</a>
+<a href="http://twitter.com/bravotv" title="Twitter">
+  <svg class="social-icon social-icon--twitter" width="220px" height="179px" viewBox="0 0 220 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <path class="social-icon--twitter--color" d="M194.083195,28.3327787 C203.381032,22.7687188 210.55574,13.9101498 213.923461,3.36772047 C205.211314,8.56572379 195.547421,12.2995008 185.224626,14.2762063 C177.024958,5.49084859 165.311148,1.42108547e-14 152.279534,1.42108547e-14 C127.387687,1.42108547e-14 107.181364,20.2063228 107.181364,45.0981697 C107.181364,48.6123128 107.547421,52.0532446 108.352745,55.3477537 C70.8685524,53.4442596 37.6306156,35.5074875 15.3011647,8.19966722 C11.4209651,14.8618968 9.22462562,22.6222962 9.22462562,30.8951747 C9.22462562,46.562396 17.2046589,60.3261231 29.2845258,68.452579 C21.890183,68.2329451 14.9351082,66.1830283 8.85856905,62.8153078 L8.85856905,63.4009983 C8.85856905,85.2911814 24.3793677,103.520799 45.0981697,107.693844 C41.2911814,108.718802 37.3377704,109.304493 33.1647255,109.304493 C30.2362729,109.304493 27.4542429,109.011647 24.672213,108.499168 C30.3826955,126.43594 47.0748752,139.467554 66.8419301,139.833611 C51.3943428,151.986689 31.9201331,159.161398 10.7620632,159.161398 C7.1014975,159.161398 3.51414309,158.941764 0,158.575707 C19.9866889,171.387687 43.7071547,178.855241 69.1846922,178.855241 C152.206323,178.855241 197.597338,110.109817 197.597338,50.4425957 C197.597338,48.4658902 197.524126,46.562396 197.450915,44.5856905 C206.309484,38.2163062 213.996672,30.3094842 220,21.2312812 C211.873544,24.8186356 203.234609,27.234609 194.083195,28.3327787 Z" id="Icon-/-Twitter"></path>
+    </g>
+  </svg>
+</a>
+<a href="http://instagram.com/bravotv" title="Instagram">
+  <svg class="social-icon social-icon--instagram" viewBox="0 0 207 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <polygon id="path-1" points="0 206 206.446362 206 206.446362 0 0 0"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Icon-/-Container-/-Instagram" transform="translate(-26.000000, -25.000000)">
+        <g id="Page-1" transform="translate(26.000000, 25.000000)">
+          <g id="Group-3">
+            <mask id="mask-2" fill="white">
+              <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path class="social-icon--instagram--color" d="M187.501399,142.924345 C187.470459,144.804095 187.434361,146.678695 187.382793,148.558445 C186.76398,171.244195 171.613373,186.591195 148.871992,186.925945 C118.421231,187.379145 87.960156,187.373995 57.509395,186.925945 C34.9794416,186.596345 19.5503684,171.429595 19.1636102,149.016795 C18.6427758,118.266145 18.6427758,87.494895 19.168767,56.749395 C19.5452116,34.532295 34.7886409,19.334645 57.0555987,18.963845 C87.8415502,18.448845 118.653286,18.443695 149.444394,18.968995 C171.675254,19.344945 186.707256,34.655895 187.357009,56.795745 C187.413734,58.737295 187.460145,60.683995 187.491086,62.625545 C187.728297,76.226695 187.444675,89.843295 187.449831,103.454745 C187.460145,116.612995 187.712827,129.771245 187.501399,142.924345 M205.942029,54.225895 C205.33353,24.577345 181.756751,1.345695 152.069193,0.274495 C148.443979,0.140595 144.808452,0.073645 141.178082,0.037595 C130.276658,-0.060255 119.370077,0.181795 108.463497,0.181795 C94.9630576,0.181795 81.4574618,-0.086005 67.9570227,0.027295 C63.4603143,0.063345 58.9636058,0.140595 54.4668973,0.284795 C24.7638687,1.232395 1.14067881,24.484645 0.511552159,54.128045 C-0.174299022,86.609095 -0.169142246,119.126195 0.511552159,151.607245 C1.13036525,181.276395 24.7071442,204.863395 54.3792321,205.491695 C86.8978602,206.176645 119.452586,206.161195 151.971214,205.496845 C181.632988,204.894295 205.31806,181.296995 205.936873,151.689645 C206.622724,119.213745 206.61241,86.701795 205.942029,54.225895" id="Fill-1" mask="url(#mask-2)"></path>
+          </g>
+          <path class="social-icon--instagram--color" d="M102.462557,137.278915 C83.5990708,137.129565 68.7269294,121.772265 68.8197513,102.542165 C68.9125733,83.270865 84.145689,68.438865 103.725967,68.557315 C122.924643,68.670615 137.75553,83.971265 137.636924,103.541265 C137.518318,122.591115 122.042834,137.433415 102.462557,137.278915 M103.065899,49.744365 C73.2648921,49.831915 49.9304816,73.264415 49.9872061,103.057165 C50.0387739,132.782965 73.5588283,156.138215 103.370149,156.060965 C133.171156,155.988865 156.546821,132.510015 156.443686,102.753315 C156.34055,72.976015 132.866907,49.661965 103.065899,49.744365" id="Fill-4"></path>
+          <path class="social-icon--instagram--color" d="M158.967927,35.24248 C151.918615,35.13948 146.246161,40.39248 146.019263,47.24198 C145.797522,53.81338 151.567954,59.84403 158.32333,60.10668 C165.042609,60.36418 170.864609,54.74038 171.003842,47.85998 C171.148232,40.60878 166.135846,35.35063 158.967927,35.24248" id="Fill-6"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+</a>
+<a href="https://www.youtube.com/user/VideoByBravo" title="YouTube">
+  <svg class="social-icon social-icon--youtube" viewBox="0 0 70 49.3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path class="social-icon--youtube--color" d="M68.5 7.7c-.8-3-3.2-5.4-6.2-6.2C56.9 0 35 0 35 0S13.1 0 7.7 1.5c-3 .8-5.4 3.2-6.2 6.2C0 13.2 0 24.7 0 24.7s0 11.5 1.5 17c.8 3 3.2 5.4 6.2 6.2 5.5 1.5 27.3 1.5 27.3 1.5s21.9 0 27.3-1.5c3-.8 5.4-3.2 6.2-6.2 1.5-5.5 1.5-17 1.5-17s0-11.5-1.5-17zM27.8 35.1V14.3l18.3 10.4-18.3 10.4z"/>
+  </svg>
+</a>
+<a href="http://www.pinterest.com/bravobybravo" title="Pinterest">
+  <svg class="social-icon social-icon--pinterest" viewBox="0 0 150 193" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g class="social-icon--pinterest--color" id="Icon-/-Container-/-Pinterest" transform="translate(-53.000000, -32.000000)">
+        <g id="Page-1" transform="translate(51.000000, 30.000000)">
+          <path d="M151.03719,55.4903496 C148.529334,37.1674007 139.186985,23.1706385 123.010142,13.5047551 C106.837987,3.84356382 88.2189146,0.263433218 67.1482373,2.77843978 C50.3479464,4.53331376 35.4273756,11.6231923 22.3865248,24.0480755 C9.34567405,36.4776508 2.57680686,51.4738466 2.07523568,69.0460473 C1.07209331,94.3978765 10.1003746,109.211077 29.1600796,113.476266 C31.4148061,109.71314 32.5445132,106.259698 32.5445132,103.125325 C32.5445132,99.9862586 31.9820035,97.5369425 30.8522964,95.7820685 C29.7225893,94.0225024 28.405379,91.8265638 26.9006655,89.1942528 C25.3959519,86.5572497 24.5193743,83.9812448 24.2709325,81.4709305 C22.7615313,72.1851133 23.7646737,63.213672 27.275672,54.5519144 C30.7866703,45.8901567 35.9945729,38.9222747 42.8900048,33.6529606 C49.7854367,28.3789543 57.369943,24.3624513 65.6482113,21.6034516 C73.9217921,18.8397596 82.4485022,18.4643855 91.2283417,20.472637 C100.003494,22.4808885 107.653626,26.7507691 114.174051,33.2775865 C119.691335,39.0489635 123.075768,47.3963453 124.327352,58.3150398 C125.583624,69.2337344 124.89455,79.650366 122.260129,89.5696269 C119.625708,99.4841957 114.863126,107.831578 107.967694,114.60708 C101.067575,121.387275 93.2299389,123.89759 84.4547869,122.138023 C77.9343616,120.885212 73.9217921,117.746146 72.4170785,112.725518 C70.912365,107.704889 71.1608068,101.92882 73.1717791,95.4066944 C75.1780638,88.879877 77.3062257,82.2873691 79.5656398,75.633863 C81.8203663,68.985049 82.696944,62.8336057 82.1953728,57.1842253 C81.6984892,51.5395371 78.8109392,47.7107211 73.5467856,45.7024696 C68.0295026,43.6942181 62.9481646,44.0695922 58.3121468,46.828592 C53.6714415,49.5922839 50.2870079,53.5430964 48.1541585,58.690414 C46.021309,63.8377315 44.9572281,69.6138006 44.9572281,76.0139293 C44.9572281,82.4140579 46.2088123,87.9977478 48.7166682,92.7696913 C47.7135258,97.79032 46.2088123,104.068452 44.2025275,111.594703 C42.2009304,119.130338 40.504026,125.525775 39.1258771,130.799781 C37.7477283,136.069095 36.3695794,142.722601 34.9914306,150.755607 C33.6085941,158.788613 32.9195197,165.817494 32.9195197,171.842248 C32.9195197,177.867003 33.2945262,185.524635 34.0492268,194.810452 C42.3228075,188.785697 48.529165,180.504006 52.6682991,169.960685 C56.8074333,159.417365 60.5059348,145.988356 63.7638037,129.668967 C65.2732048,130.424407 67.274802,131.677218 69.7873455,133.436784 C72.2952014,135.191658 74.2967986,136.51016 75.8015121,137.387597 C77.3062257,138.269726 79.2515719,139.147163 81.6328631,140.0246 C84.0188419,140.902037 86.5876364,141.46979 89.3439341,141.718476 C103.139485,142.975979 115.238132,139.33485 125.644563,130.799781 C136.05568,122.264712 143.391745,111.219329 147.652756,97.6636313 C151.913767,84.1079336 153.043474,70.0501731 151.03719,55.4903496" id="Fill-1"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+</a>
+<a href="/newsletter" title="Newsletter">
+  <svg class="social-icon social-icon--newsletter" enable-background="new 0 0 176 120" viewBox="0 0 176 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <filter id="a" width="176" height="120" x="0" y="0" filterUnits="userSpaceOnUse">
+        <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+      </filter>
+    </defs>
+    <mask id="b" width="176" height="120" x="0" y="0" maskUnits="userSpaceOnUse">
+      <path class="social-icon--newsletter--color" d="M176 120H0V0h176z" filter="url(#a)"/>
+    </mask>
+    <path class="social-icon--newsletter--color" d="M.7 8.6C.3 10 0 11.4 0 12.9v94.3c0 7.1 5.7 12.9 12.9 12.9h150.2c7.1 0 12.9-5.7 12.9-12.9V12.9c0-1.5-.3-2.9-.7-4.2L100 72.3c-7 5.9-17.2 5.9-24.1 0L.7 8.6zM12.9 0c-2.5 0-4.8.7-6.8 1.9l75.3 63.8c4 3.4 9 3.4 13 0l75.5-63.8c-2-1.2-4.3-1.9-6.8-1.9H12.9z" mask="url(#b)"/>
+  </svg>
+</a>
+
+      </div>
+    </div>
+    <div class="copyright container">
+      <a class="b-icon icon-bravo-logo-shape copyright__logo" href="/">
+        <span class="visuallyhidden">Home</span>
+      </a>
+      <div class="copyright__copy">
+        &copy;2019 Bravo Media LLC. <a href="http://www.nbcuniversal.com" class="copyright__link">A Division of NBCUniversal</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="bravotv.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+    e=d.getElementById(i), r=d.getElementById(p+"-root"),
+    u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+    :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard --><!-- SiteCatalyst code version: H.24
+Copyright 1996-2019 Adobe, Inc. -->
+<script type="text/javascript" language="JavaScript">var s_account="nbcuglobal,nbcubravotvbu";</script>
+<script type="text/javascript" src="/sites/nbcubravotv/modules/features/bravo_sitecatalyst/js/s_code.js?pl0nic"></script>
+<script type="text/javascript"><!--
+
+s.pageName="10 Insane Facts You Never Knew About Penguins, But Now You\u2019ll Never Forget";
+s.contextData["bravo.userGroup"]="anonymous user";
+s.contextData["bravo.contentType"]="Blog Post";
+s.contextData["bravo.season"]="";
+s.contextData["bravo.date"]="01-22-2019";
+s.contextData["bravo.articleTitle"]="10 Insane Facts You Never Knew About Penguins, But Now You\u2019ll Never Forget";
+s.contextData["bravo.people"]="";
+s.contextData["bravo.contentID"]="1132451";
+s.contextData["bravo.pageURL"]="http:\/\/www.bravotv.com\/unleashed\/penguin-facts-for-penguin-appreciation-day";
+s.contextData["bravo.franchise"]="";
+s.contextData["bravo.thedish"]="";
+s.contextData["nbcu.network"]="BravoTV.com";
+s.contextData["nbcu.showsite"]="";
+s.contextData["nbcu.division"]="Cable";
+s.contextData["bravo.author"]="Kristyn Pomranz";
+s.contextData["bravo.publishedDate"]="01\/20\/2018";
+s.contextData["bravo.topic"]="";
+s.contextData["bravo.customSubSection"]="Unleashed";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24 -->
+<script type="text/javascript" src="/sites/all/libraries/modernizr/modernizr.min.js?pl0nic"></script>
+<script type="text/javascript" src="/sites/nbcubravotv/files/advagg_js/js__lTcw7zp9PyaWb-vEleyrwTsvHh2p_DiuD6J5ZSicJSs__ZGK6R0_0BdHwoo46aLaJIUjayU-Jt-QfC6rLn009ZKc__wzgXxzS8yQsfL_QvGI9UJzpoJYkt568RQ1v8v05WSdg.js"></script>
+<script type="text/javascript">
+document.createElement( "picture" );
+</script>
+<script type="text/javascript" src="/sites/nbcubravotv/files/advagg_js/js__gXeeUbne_mlk17Q4ONRjzQewJHTaUBuqWqKQJ-IrZyY__zxJw8lshSMqT7dyx4lu6UtXid667q3cQFWrjH8xqT-Q__wzgXxzS8yQsfL_QvGI9UJzpoJYkt568RQ1v8v05WSdg.js"></script>
+<script type="text/javascript">
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"reality","theme_token":"2DeH4xUohDlbH1vAdMvZqLmYhhRLvLKoYpF_CcvsNsY","css":{"sites\/all\/modules\/contrib\/youtube\/css\/youtube.css":1,"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"profiles\/publisher\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/publisher\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/themes\/custom\/lifestyle\/css\/style.css":1,"sites\/nbcubravotv\/themes\/custom\/reality\/css\/reality--white-navy.css":1},"js":{"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"profiles\/publisher\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"sites\/all\/libraries\/detectmobilebrowser\/detectmobilebrowser.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/helper\/js\/Drupal.formatInterval.min.js":1,"sites\/all\/libraries\/jquery.waypoints\/waypoints.min.js":1,"sites\/all\/modules\/contrib\/fb_instant_articles\/modules\/fb_instant_articles_display\/js\/admin.js":1,"sites\/all\/modules\/contrib\/extlink\/extlink.js":1,"sites\/nbcubravotv\/modules\/features\/bravo_ads\/js\/isInViewport.js":1,"sites\/nbcubravotv\/modules\/features\/bravo_ads\/js\/bravo_ads.js":1,"sites\/all\/libraries\/jquery.matchheight\/jquery.matchHeight-min.js":1,"sites\/all\/libraries\/jquery.fitvids\/jquery.fitvids.js":1,"sites\/all\/libraries\/media.match\/media.match.min.js":1,"sites\/all\/libraries\/enquire.js\/enquire.min.js":1,"sites\/all\/libraries\/imagesloaded\/imagesloaded.pkgd.min.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.2.23\/angular.min.js":1,"sites\/all\/modules\/custom\/common_parsely\/js\/common_parsely.js":1,"sites\/all\/modules\/custom\/common_parsely_video\/js\/common_parsely_video.js":1,"sites\/nbcubravotv\/modules\/features\/bravo_blog\/js\/bravo_blog.js":1,"sites\/all\/modules\/custom\/microsite_index\/js\/microsite_index.js":1,"sites\/all\/libraries\/ng-infinite-scroll\/ng-infinite-scroll.min.js":1,"sites\/all\/modules\/custom\/microsite_index\/js\/app.js":1,"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"sites\/nbcubravotv\/modules\/features\/bravo_sitecatalyst\/js\/bravo_sitecatalyst.js":1,"profiles\/publisher\/modules\/custom\/pub_analytics\/js\/tve-analytics.js":1,"sites\/all\/themes\/custom\/lifestyle\/js\/global.js":1,"sites\/all\/themes\/custom\/lifestyle\/js\/bravo_card_list.js":1,"sites\/all\/themes\/custom\/lifestyle\/js\/navigation.js":1,"sites\/all\/themes\/custom\/lifestyle\/js\/tv_episode.js":1,"\/\/s7.addthis.com\/js\/300\/addthis_widget.js#pubid=ra-53d69bd22e0b6c46":1,"\/\/assets.pinterest.com\/js\/pinit.js":1,"http:\/\/www.zergnet.com\/zerg.js?id=44853":1}},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":0,"extExclude":"^https?:\\\/\\\/(?:[^@]*?@)?(?:dev|\\d+\\.test|local|staging|akamai-origin)\\.bravotv\\.com","extInclude":"bravotv\\.com\\\/now(?:\\\/|$)","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"tve_auth":{"version":"2.0","theme":"reality","isTve":0,"data":{"draft":null,"published":{"welcome_window":{"brand_logo":{"fid":0},"text_top":{"text":"","style":""},"text_center":{"text":"","style":""},"text_bottom":{"text":"","style":""},"buttons":{"yes_title":"","yes_description":"","no_title":"","no_description":"","no_url":"","no_url_target":0},"preview":"Preview \u0022Welcome Modal Window\u0022"},"login_window":{"text_line_1":{"text":"Select Your TV Provider to Watch Bravo"},"text_line_2":{"text":{"value":"","format":"plain_text"}},"text_line_3":{"text":"or Find Your Provider Below and Login"},"text_line_4":{"text":"Need Help? Visit Our FAQs","zendesk_url":false,"url":"https:\/\/www.bravotv.com\/frequently-asked-questions"},"text_line_5":{"text":"NBCUniversal does not collect any of your account information"},"preview":"Preview \u0022Login Modal Window\u0022"},"additional":{"behavior":"none","error_configs":{"general":{"title":"Sorry! There\u0027s a problem.","description":{"value":"Sorry about that! We seem to be experiencing a technical issue right now. Please try again later.","format":"plain_text"}},"flash":{"title":"You may need to update your version of Flash and\/or enable flash in your browser.","description":{"value":"Please either update the version of flash with the link below or enable or allow flash in your Browser. You need to refresh or reload this page.\u003Cbr\u003E\r\n\u003Ca href=\u0022https:\/\/get.adobe.com\/flashplayer\/\u0022 target=\u0022_blank\u0022\u003Ehttps:\/\/get.adobe.com\/flashplayer\/\u003C\/a\u003E","format":"plain_text"}},"adobepass":{"title":"Sorry! There\u0027s a problem.","description":{"value":"Sorry about that! The login is not available now. Please try again later.","format":"plain_text"}},"macsafari":{"title":"Sorry! There\u0027s a problem with your flash version.","description":{"value":"Please update to the latest flash version.\u003Cbr\u003E\r\n\u003Ca href=\u0022https:\/\/get.adobe.com\/flashplayer\/\u0022 target=\u0022_blank\u0022\u003Ehttps:\/\/get.adobe.com\/flashplayer\/\u003C\/a\u003E","format":"plain_text"}}}}}},"behavior":"none"},"analytics":{"brandSuiteId":"nbcuglobal,nbcubravotvbu","tveSuiteId":"nbcutve,nbcubravotvbu"},"micrositeIndex":{"num_pages":30},"bravo_ads":{"BRAVO_ADS_DOC_WRITE":0,"BRAVO_ADS_DOM_INJECTION":1}});
+</script>
+<script type="text/javascript" src="/sites/nbcubravotv/files/advagg_js/js__a30g6GHNxcSltPHhhm3d_O0HQJQbUw2p_cCG8Hhmyc0__CJo_UDsaT2QbfYgU-yXbJpuzI3DQYc24Gmqyx79bmPQ__wzgXxzS8yQsfL_QvGI9UJzpoJYkt568RQ1v8v05WSdg.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<script type="text/javascript" src="/sites/nbcubravotv/files/advagg_js/js__SzcViKGMxsYmh6Jqei13lm6NAB49RcYaT3_KvWqEWoQ__gTxoPiWmc0tIPGHjEyVKycBLJL0c7XFT-2P3dqrLYXA__wzgXxzS8yQsfL_QvGI9UJzpoJYkt568RQ1v8v05WSdg.js"></script>
+<script type="text/javascript" src="/sites/nbcubravotv/files/advagg_js/js__GM3GJPR36rRIz0TRkjC5OQwrioSyN9aoYRivDhCO_AM__qAl84FcCv2jyN22yFGS5Oc85cjd9zKX6p_cFNLGhe-M__wzgXxzS8yQsfL_QvGI9UJzpoJYkt568RQ1v8v05WSdg.js" async="async"></script>
+<script type="text/javascript" src="/sites/nbcubravotv/files/advagg_js/js__U0-enC8ScMaQ-xXZ3w-_7d-IjjmN55TxHMLxmKAOgMM__C0UHThPsn6yHab-R0OxbllSXLs9rzFGN8ZCM1sRxwHs__wzgXxzS8yQsfL_QvGI9UJzpoJYkt568RQ1v8v05WSdg.js"></script>
+<script type="text/javascript" async="async" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53d69bd22e0b6c46"></script>
+<script type="text/javascript" defer="defer" async="async" src="//assets.pinterest.com/js/pinit.js"></script>
+<script type="text/javascript" defer="defer" async="async" src="//www.zergnet.com/zerg.js?id=44853"></script>
+<script type="text/javascript">
+typeof(mps)=='object' && typeof(mps.writeFooter)=='function' && mps.writeFooter();
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ab5855233f","applicationID":"19603966","transactionName":"Z1QHN0JXXUdQVhUMXl4eJABEX1xaHkUAAlRvXAQNUVFWRm5bDgFUb0cMBkdpQ1VWUA==","queueTime":0,"applicationTime":1430,"atts":"SxMEQQpNTkk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
